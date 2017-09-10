@@ -5,7 +5,7 @@ str.replace(/\s/g, "").toLowerCase();
 //for storage of final built string
 for (var i = 0, len = str.length; i < len; i++) {
     if (str.slice(i, i+1).match(/^[0-9]+$/) != null){
-        number += parseInt(str.slice(i, i+1)).toString();
+        number += str.slice(i, i+1);
     }
     else {
         if (str.slice(i, i + 3).indexOf("one") != -1){
